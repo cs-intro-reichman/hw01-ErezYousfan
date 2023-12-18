@@ -12,13 +12,8 @@ public class GenThree {
 		int first = ThreadLocalRandom.current().nextInt(min, max);
 		int second = ThreadLocalRandom.current().nextInt(min, max);
 		int third = ThreadLocalRandom.current().nextInt(min, max);
-		int minnum = first;
-		if( minnum > second){
-			minnum = second;
-		}
-		if(minnum > third){
-			minnum = third;
-		}
+		int minnum = Math.min(first, second);
+		minnum = Math.min(minnum, third);
 		System.out.println(first);
 		System.out.println(second);
 		System.out.println(third);
