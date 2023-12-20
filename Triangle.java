@@ -9,9 +9,9 @@ public class Triangle {
 		int	var1 = Integer.parseInt(args[0]);
 		int var2 = Integer.parseInt(args[1]);
 		int	var3 = Integer.parseInt(args[2]);
-		boolean istriangle = var1 + var2 > var3;
-		istriangle = istriangle && (var2 + var3 > var1);
-		istriangle = istriangle && (var1 + var3 > var2);
-		System.out.println(var1 + ", " + var2 + ", " + var3 + ": " + istriangle);
+		boolean isTriangle = var1 + var2 > var3;
+		isTriangle = isTriangle && (var2 + var3 > var1);
+		isTriangle = isTriangle && (var1 + var3 > var2);
+		System.out.println(var1 + ", " + var2 + ", " + var3 + ": " + isTriangle);
 	}
 }
